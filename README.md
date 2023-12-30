@@ -8,4 +8,4 @@ Supports all types of files
 
 [Tests](Testing.txt/)
 
-Tests Completed on `sch9.ru/gate/benchmarker`
+Tested on `sch9.ru/gate/benchmarker`
