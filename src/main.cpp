@@ -21,10 +21,6 @@ void opener()
 
 }
 
-void progressBar(int progress) {
-    cerr << endl << progress << "% Done" << endl;
-}
-
 FILE *fI, *fO;
 
 struct Tree {
@@ -99,8 +95,6 @@ Tree *build(int *freq) {
 
     }
 
-    progressBar(50);
-
     Init(MinHeap.top(), "");
 
     return MinHeap.top();
@@ -112,8 +106,6 @@ bool bit(unsigned char ch, int i) {
 }
 
 void Encode() {
-
-    progressBar(0);
 
     int freq[256], cnt = 0;
     unsigned char ch;
@@ -129,8 +121,15 @@ void Encode() {
     }
 
     fprintf(fO, "%d ", cnt);
-
-    if (cnt < 128) {
+    if (cnt == 1) {
+        for (int i = 0; i < 256; i++) {
+            if (freq[i]) {
+                fprintf(fO, "%d ", i);
+                fprintf(fO, "%d ", freq[i]);
+                return;
+            }
+        }
+    } else if (cnt < 128) {
 
         for (int i = 0; i < 256; i++) {
 
@@ -148,29 +147,12 @@ void Encode() {
         }
     }
 
-    progressBar(25);
-
     rewind(fI);
 
-    if (cnt != 1) {
-
-        build(freq);
-    } else {
-
-        for (int i = 0; i < 256; i++) {
-
-            if (freq[i]) {
-
-                codes[i] = "0";
-                break;
-            }
-        }
-    }
+    build(freq);
 
     unsigned char byte = 0;
     int cnt_bit = 0;
-
-    progressBar(75);
 
     while (fscanf(fI, "%c", &ch) != -1) {
 
@@ -198,13 +180,9 @@ void Encode() {
         fprintf(fO, "%c", byte);
     }
 
-    progressBar(100);
-
 }
 
 void Decode() {
-
-    progressBar(0);
 
     int freq[256];
     memset(freq, 0, sizeof(freq));
@@ -215,11 +193,25 @@ void Decode() {
     fscanf(fI, "%d", &num);
     fscanf(fI, "%c", &space);
 
-    if (num < 128) {
+    if (num == 1) {
+        int ch = 0, frq = 0;
+
+        fscanf(fI, "%d", &ch);
+        fscanf(fI, "%c", &space);
+
+        fscanf(fI, "%d", &frq);
+        fscanf(fI, "%c", &space);
+
+        for (int i = 0; i < frq; i++) {
+            fprintf(fO, "%c", (unsigned char)ch);
+        }
+        return;
+
+    } else if (num < 128) {
 
         for (int i = 0; i < num; i++) {
 
-            int ch, frq;
+            int ch = 0, frq = 0;
 
             fscanf(fI, "%d", &ch);
             fscanf(fI, "%c", &space);
@@ -242,25 +234,7 @@ void Decode() {
         }
     }
 
-    progressBar(25);
-
-    Tree *root = nullptr;
-
-    if (num != 1) {
-
-        root = build(freq);
-    } else {
-
-        for (int i = 0; i < 256; i++) {
-
-            if (freq[i]) {
-
-                codes[i] = "0";
-                root = Construct('\0', freq[i], Construct((unsigned char)i, freq[i]));
-                break;
-            }
-        }
-    }
+    Tree *root = build(freq);
 
     Tree *node = root;
 
@@ -274,8 +248,6 @@ void Decode() {
     }
 
     cnt = 0;
-
-    progressBar(75);
 
     while (fscanf(fI, "%c", &chr) != -1) {
 
@@ -303,8 +275,6 @@ void Decode() {
 
         cnt++;
     }
-
-    progressBar(100);
 
 }
 
@@ -334,7 +304,7 @@ int32_t main(int argc, char *argv[]) {
     fclose(fO);
 
     chrono::_V2::system_clock::time_point end_time = chrono::high_resolution_clock::now();
-    cerr << endl << (strcmp("encode", argv[1]) ? "Decompression time: " : "Compression time: ") << chrono::duration_cast<chrono::milliseconds>(end_time - start_time).count() << " ms" << endl;
+    cerr << endl << "Completed Successfully" << endl << endl << (strcmp("encode", argv[1]) ? "Decompression time: " : "Compression time: ") << chrono::duration_cast<chrono::milliseconds>(end_time - start_time).count() << " ms" << endl;
 
     return 0;
 }
