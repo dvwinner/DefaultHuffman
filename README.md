@@ -7,3 +7,5 @@ Supports all types of files
 ## Testing Results
 
 [Tests](Testing.txt/)
+
+Tests Completed on `sch9.ru/gate/benchmarker`
