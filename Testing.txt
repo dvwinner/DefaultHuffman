@@ -1,0 +1,70 @@
+﻿2023-12-30T12:34:05+05:00 - A request for testing has been send. Refresh this page to see the result. Save the link if you want to access the results later.
+2023-12-30T12:34:12.121575 - Testing started
+                             Solution successfully compiled
+2023-12-30T12:34:13.609134 - Test case test
+                             Encoding run META: {'time': '0.007', 'time-wall': '0.019', 'max-rss': '1336', 'csw-voluntary': '3', 'csw-forced': '1', 'cg-mem': '380', 'exitcode': '0'}
+                             Decoding run META: {'time': '0.006', 'time-wall': '0.018', 'max-rss': '1324', 'csw-voluntary': '3', 'csw-forced': '1', 'cg-mem': '380', 'exitcode': '0'}
+                             Sizes (bytes): archive - 82, file - 143
+                             Compression ratio: 0.5734265734265734
+                             Points: 5303.548628139464
+2023-12-30T12:34:13.905600 - Test case War and Peace
+                             Encoding run META: {'time': '0.975', 'time-wall': '0.989', 'max-rss': '1356', 'csw-voluntary': '3', 'csw-forced': '16', 'cg-mem': '3196', 'exitcode': '0'}
+                             Decoding run META: {'time': '0.480', 'time-wall': '0.491', 'max-rss': '1348', 'csw-voluntary': '3', 'csw-forced': '3', 'cg-mem': '5628', 'exitcode': '0'}
+                             Sizes (bytes): archive - 2767530, file - 5322819
+                             Compression ratio: 0.5199368980985452
+                             Points: 7114.560606821818
+2023-12-30T12:34:15.714872 - Test case really small text file
+                             Encoding run META: {'time': '0.006', 'time-wall': '0.018', 'max-rss': '1332', 'csw-voluntary': '3', 'csw-forced': '1', 'cg-mem': '380', 'exitcode': '0'}
+                             Decoding run META: {'time': '0.006', 'time-wall': '0.018', 'max-rss': '1328', 'csw-voluntary': '3', 'csw-forced': '1', 'cg-mem': '380', 'exitcode': '0'}
+                             Sizes (bytes): archive - 24, file - 8
+                             Compression ratio: 3.0
+                             Points: 37.03703703703703
+2023-12-30T12:34:15.957581 - Test case really big text file
+                             Encoding run META: {'time': '13.528', 'time-wall': '13.547', 'max-rss': '1344', 'csw-voluntary': '3', 'csw-forced': '130', 'cg-mem': '73724', 'exitcode': '0'}
+                             Decoding run META: {'time': '5.804', 'time-wall': '5.817', 'max-rss': '1332', 'csw-voluntary': '3', 'csw-forced': '34', 'cg-mem': '98172', 'exitcode': '0'}
+                             Sizes (bytes): archive - 75000729, file - 100000000
+                             Compression ratio: 0.75000729
+                             Points: 2370.3012517140414
+2023-12-30T12:34:36.516793 - Test case random binary file
+                             Encoding run META: {'time': '0.209', 'time-wall': '0.225', 'max-rss': '1364', 'csw-voluntary': '3', 'csw-forced': '11', 'cg-mem': '1532', 'exitcode': '0'}
+                             Decoding run META: {'time': '0.142', 'time-wall': '0.162', 'max-rss': '1356', 'csw-voluntary': '3', 'csw-forced': '2', 'cg-mem': '1404', 'exitcode': '0'}
+                             Sizes (bytes): archive - 1001284, file - 1000000
+                             Compression ratio: 1.001284
+                             Points: 996.1578708079547
+2023-12-30T12:34:37.183828 - Test case bamboo binary file
+                             Encoding run META: {'time': '6.921', 'time-wall': '6.932', 'max-rss': '1340', 'csw-voluntary': '3', 'csw-forced': '26', 'cg-mem': '16892', 'exitcode': '0'}
+                             Decoding run META: {'time': '3.218', 'time-wall': '3.230', 'max-rss': '1328', 'csw-voluntary': '3', 'csw-forced': '11', 'cg-mem': '65916', 'exitcode': '0'}
+                             Sizes (bytes): archive - 16777424, file - 67108864
+                             Compression ratio: 0.2500030994415283
+                             Points: 63997.6196879276
+2023-12-30T12:34:48.106670 - Test case special binary file
+                             Encoding run META: {'time': '0.158', 'time-wall': '0.169', 'max-rss': '1316', 'csw-voluntary': '3', 'csw-forced': '2', 'cg-mem': '508', 'exitcode': '0'}
+                             Decoding run META: {'time': '0.037', 'time-wall': '0.047', 'max-rss': '1312', 'csw-voluntary': '3', 'csw-forced': '2', 'cg-mem': '1404', 'exitcode': '0'}
+                             Sizes (bytes): archive - 125012, file - 1000000
+                             Compression ratio: 0.125012
+                             Points: 5.118525723070228e-10
+2023-12-30T12:34:48.664204 - Test case Fishe_as_a_Ball.jpg
+                             Encoding run META: {'time': '0.542', 'time-wall': '0.553', 'max-rss': '1364', 'csw-voluntary': '3', 'csw-forced': '3', 'cg-mem': '3324', 'exitcode': '0'}
+                             Decoding run META: {'time': '0.368', 'time-wall': '0.381', 'max-rss': '1352', 'csw-voluntary': '3', 'csw-forced': '2', 'cg-mem': '3324', 'exitcode': '0'}
+                             Sizes (bytes): archive - 2984758, file - 2985137
+                             Compression ratio: 0.9998730376528783
+                             Points: 1000.3809837784605
+2023-12-30T12:34:49.924798 - Test case .docx
+                             Encoding run META: {'time': '0.009', 'time-wall': '0.023', 'max-rss': '1364', 'csw-voluntary': '3', 'csw-forced': '1', 'cg-mem': '380', 'exitcode': '0'}
+                             Decoding run META: {'time': '0.008', 'time-wall': '0.019', 'max-rss': '1360', 'csw-voluntary': '3', 'csw-forced': '1', 'cg-mem': '380', 'exitcode': '0'}
+                             Sizes (bytes): archive - 12515, file - 12968
+                             Compression ratio: 0.9650678593460826
+                             Points: 1112.5676905538503
+2023-12-30T12:34:50.218577 - Test case .pdf
+                             Encoding run META: {'time': '0.184', 'time-wall': '0.194', 'max-rss': '1364', 'csw-voluntary': '3', 'csw-forced': '4', 'cg-mem': '1276', 'exitcode': '0'}
+                             Decoding run META: {'time': '0.137', 'time-wall': '0.148', 'max-rss': '1360', 'csw-voluntary': '3', 'csw-forced': '3', 'cg-mem': '1276', 'exitcode': '0'}
+                             Sizes (bytes): archive - 872870, file - 894841
+                             Compression ratio: 0.9754470347246047
+                             Points: 1077.4296466433511
+2023-12-30T12:34:50.861705 - Test case executable linux binary
+                             Encoding run META: {'time': '0.319', 'time-wall': '0.330', 'max-rss': '1364', 'csw-voluntary': '3', 'csw-forced': '3', 'cg-mem': '1660', 'exitcode': '0'}
+                             Decoding run META: {'time': '0.209', 'time-wall': '0.220', 'max-rss': '1360', 'csw-voluntary': '3', 'csw-forced': '2', 'cg-mem': '1916', 'exitcode': '0'}
+                             Sizes (bytes): archive - 1240571, file - 1527752
+                             Compression ratio: 0.8120238101471967
+                             Points: 1867.642329843482
+2023-12-30T12:34:51.709953 - Solution scored 84877.24573326757
